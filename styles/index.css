@@ -1,0 +1,12 @@
+.catalogo{
+    display: flex;
+}
+
+.catalogo table{
+    margin: 0 auto;
+    text-align: left;
+}
+
+.catalogo td, .catalogo th{
+    padding: 0 3em;
+}
