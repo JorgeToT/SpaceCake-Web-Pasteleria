@@ -1,12 +1,82 @@
-.catalogo{
-    display: flex;
+:root {
+  --primary-color: #25274c;
+  --secondary-color: #434c67;
 }
 
-.catalogo table{
-    margin: 0 auto;
-    text-align: left;
+body {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
-.catalogo td, .catalogo th{
-    padding: 0 3em;
+header,
+header img,
+footer {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+header {
+  background-image: url("../img/fondo.png");
+  margin-bottom: 1em;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em;
+  font-size: small;
+}
+
+header img {
+  height: 8em;
+  width: auto;
+  clip-path: circle(45% at center);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+section img {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.menu {
+  padding: 0 10%;
+  text-align: left;
+  background-image: url("../img/fondo.png");
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  margin-top: 1em;
+  background-image: url("../img/fondo.png");
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div {
+  margin: 0 1em;
+  font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+  section img {
+    width: 50%;
+  }
 }
