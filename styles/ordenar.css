@@ -39,36 +39,40 @@ header div a{
 }
 
 section{
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-section img{
-    width: 400px;
-    height: 300px;
-    border-radius: 100%;
-    border: 2px black solid;
-    margin: 30px;
+form{
+    display: flex;
+    background-color: #fbb4f736;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0 5% 20px 5%;
+    margin: 30px 20%;
+    border-radius: 10px;
 }
 
-section label{
-    font-size: 20px;
+h2{
+    margin: 8px 0;
 }
 
-section div{
-    width: 25%;
-    margin: 2%;
+select{
     text-align: center;
+    width: fit-content;
 }
 
-#batman{
-    width: 400px;
-    height: 400px;
+button{
+    margin: 20px 5px 5px 5px;
+    width: 60%;
+    align-self: center;
 }
 
 footer{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,11 +100,6 @@ footer a, footer svg{
     margin: 15px;
 }
 
-@media (max-width:2200px) {
-    section div{
-        width: auto;
-}
-}
 @media (max-width:475px) {
     header{
         flex-direction: column;

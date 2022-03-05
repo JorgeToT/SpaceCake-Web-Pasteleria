@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/ordenar.css">
+    <script src="../js/main.js"></script>
+    <title>Ordenar</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="">
+        <div>
+            <a href="../views/ordenar.html">Orden</a>
+            <a href="../index.html">Productos</a>
+            <a href="../views/contacto.html">Contacto</a>
+        </div>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg></a>
+    </header>
+    <section>
+        <form action="" id="ordenDePastel">
+            <h2>Ingresa tus datos:</h2>
+            <label for="nombreCliente">Nombre:</label>
+            <input type="text" name="nombreCliente" id="nombreCliente">
+            <label for="telefonoCliente">Teléfono:</label>
+            <input type="tel" name="telefonoCliente" id="telefonoCliente" maxlength="10">                
+            <label for="correoCliente">Correo Electrónico:</label>
+            <input type="email" name="correoCliente" id="correoCliente">                    
+            <label for="instruccionesCliente">Instrucciones especiales:</label>
+            <textarea id="instruccionesCliente" rows="8" cols="80"></textarea>         
+            <h2>Sabores:</h2>
+            <label for="saborFresa"><input type="checkbox" name="saborFresa" id="saborFresa">Fresa</label>
+            <label for="saborChocolate"><input type="checkbox" name="saborChocolate" id="saborChocolate">Chocolate</label>
+            <label for="saborVainilla"><input type="checkbox" name="saborVainilla" id="saborVainilla">Vainilla</label>
+            <label for="sabor3Leches"><input type="checkbox" name="sabor3Leches" id="sabor3Leches">3 Leches</label>
+            <label for="saborCajeta"><input type="checkbox" name="saborCajeta" id="saborCajeta">Sabor Cajeta</label>
+            <label for="saborZarza"><input type="checkbox" name="saborZarza" id="saborZarza">Sabor Zarzamora</label>
+            <h2>Adornos:</h2>
+            <label class="checkbox-inline"><input type="checkbox" value="">Edad (Velas con número)</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Paquete de 5 velas</label>
+            <label class="checkbox-inline"><input type="checkbox" value="">Paquete de 15 velas</label>
+            <label class="checkbox-inline"><input type="checkbox" id="velaMagica">Vela mágica</label>
+            <label class="checkbox-inline"><input type="checkbox" id="velaDiseñoPersonaje">Vela con diseño de personaje
+                <select id="velaDiseñoPersonaje" name="velaDiseñoPersonaje">
+                    <option value="batman">Batman</option>
+                    <option value="hulk">Hulk</option>
+                    <option value="amongUs">Among Us</option>
+                    <option value="minion">Minion</option>
+                </select>
+            </label>
+            <!-- <input type="submit" value="Hacer pedido"> -->
+            <button type="button" onclick="recogerDatos()">Hacer pedido</button>
+            <button type="reset">Borrar orden</button>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <p>Siguenos en:</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+        </div>
+        <img src="../img/fraseNombre.png" alt="">
+        <div>
+            <a href="">Términos y Condiciones</a>
+            <a href="">Aviso de Privacidad</a>
+        </div>
+    </footer>
+</body>
+</html>

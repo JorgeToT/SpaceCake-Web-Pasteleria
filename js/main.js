@@ -3,7 +3,7 @@ function recogerDatos(){
     let telefono = document.getElementById("telefonoCliente").value;
     let correo = document.getElementById("correoCliente").value;
 
-    let mensaje = nombre+" "+telefono+""+correo
+    let mensaje = nombre+" "+telefono+" "+correo;
 
     console.log(mensaje);
-}
+} 

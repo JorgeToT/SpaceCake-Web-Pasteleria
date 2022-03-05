@@ -39,36 +39,65 @@ header div a{
 }
 
 section{
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-section img{
-    width: 400px;
-    height: 300px;
-    border-radius: 100%;
-    border: 2px black solid;
-    margin: 30px;
+form{
+    display: flex;
+    background-color: #fbb4f736;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0 5% 40px 5%;
+    margin: 30px 20%;
+    border-radius: 10px;
 }
 
-section label{
-    font-size: 20px;
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fbb4f736;
+    border-radius: 10px;
+    padding: 5px;
+} 
+
+.datos p{
+    margin:0 5px;
 }
 
-section div{
-    width: 25%;
-    margin: 2%;
-    text-align: center;
+.datos svg{
+    width: auto;
+    height: 15px;
+    align-self: center;
+    justify-self: center;
 }
 
-#batman{
-    width: 400px;
-    height: 400px;
+.format{
+    display: flex;
+}
+
+button{
+    width: fit-content;
+    align-self: center;
+    margin: 5px;
+}
+
+.mapouter{
+    margin: 20px 0;
+    display: flex;
+    justify-content:center;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
 }
 
 footer{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,11 +125,11 @@ footer a, footer svg{
     margin: 15px;
 }
 
-@media (max-width:2200px) {
-    section div{
-        width: auto;
+footer svg{
+    width: 30px;
+    height: auto;
 }
-}
+
 @media (max-width:475px) {
     header{
         flex-direction: column;
@@ -109,4 +138,11 @@ footer a, footer svg{
         width: 150px;
         height: auto;
 }
+}
+
+@media (max-width:700px) {
+    #gmap_canvas{
+        width: 300px;
+        text-align: center;
+    }
 }
